@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/hospedow/teste.hospedoweb.com.br
+    - rsync -av --delete --exclude='.git' ./ $DEPLOY_PATH/
